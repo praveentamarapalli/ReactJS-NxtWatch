@@ -82,7 +82,7 @@ const Header = props => (
             <Logo src={logoUrl} alt="website logo" />
           </Link>
           <HeaderOptions>
-            <ThemeButton onClick={onChangeTheme}>
+            <ThemeButton onClick={onChangeTheme} data-testid="theme">
               {darkMode ? (
                 <FiSun size={25} color="white" />
               ) : (

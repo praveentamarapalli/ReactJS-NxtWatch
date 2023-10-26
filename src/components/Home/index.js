@@ -58,7 +58,7 @@ class Home extends Component {
 
   getHomeVideosData = async () => {
     this.setState({
-      apiStatus: apiStatusConstants.loader,
+      apiStatus: apiStatusConstants.loading,
     })
 
     const {searchInput} = this.state
@@ -221,7 +221,7 @@ class Home extends Component {
                         alt="nxt watch logo"
                       />
                       <BannerDescription>
-                        Buy NxtWatch Premium prepaid plans with UPI{' '}
+                        Buy Nxt Watch Premium
                       </BannerDescription>
                       <GetNowButton>GET IT NOW</GetNowButton>
                     </BannerContent>

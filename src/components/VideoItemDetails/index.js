@@ -207,7 +207,7 @@ class VideoItemDetails extends Component {
     )
   }
 
-  renderFailureView = () => <FailureView onRetry={this.getVideoItemDetails()} />
+  renderFailureView = () => <FailureView onRetry={this.getVideoItemDetails} />
 
   renderVideoItemDetailsView = () => {
     const {apiStatus} = this.state
