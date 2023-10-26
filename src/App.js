@@ -54,9 +54,9 @@ class App extends Component {
 
   removeVideo = id => {
     const {savedVideos} = this.state
-    const filteredVidoes = savedVideos.filter(eachVideo => eachVideo.id !== id)
+    const filteredVideos = savedVideos.filter(eachVideo => eachVideo.id !== id)
     this.setState({
-      savedVideos: filteredVidoes,
+      savedVideos: filteredVideos,
     })
   }
 
