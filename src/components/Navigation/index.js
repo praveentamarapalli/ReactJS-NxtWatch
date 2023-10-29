@@ -118,18 +118,24 @@ const Navigation = () => (
             <ContactContainer>
               <ContactHeading color={textColor}>Contact Us</ContactHeading>
               <SocialContainer>
-                <Image
-                  src="https://assets.ccbp.in/frontend/react-js/nxt-watch-facebook-logo-img.png"
-                  alt="facebook logo"
-                />
-                <Image
-                  src="https://assets.ccbp.in/frontend/react-js/nxt-watch-twitter-logo-img.png"
-                  alt="twitter logo"
-                />
-                <Image
-                  src="https://assets.ccbp.in/frontend/react-js/nxt-watch-linked-in-logo-img.png"
-                  alt="linked in logo"
-                />
+                <a href="https://www.facebook.com/" target="__blank">
+                  <Image
+                    src="https://assets.ccbp.in/frontend/react-js/nxt-watch-facebook-logo-img.png"
+                    alt="facebook logo"
+                  />
+                </a>
+                <a href="https://twitter.com/" target="__blank">
+                  <Image
+                    src="https://assets.ccbp.in/frontend/react-js/nxt-watch-twitter-logo-img.png"
+                    alt="twitter logo"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/" target="__blank">
+                  <Image
+                    src="https://assets.ccbp.in/frontend/react-js/nxt-watch-linked-in-logo-img.png"
+                    alt="linked in logo"
+                  />
+                </a>
               </SocialContainer>
               <Description color={textColor}>
                 Enjoy! Now to see your channels and recommendations!

@@ -22,11 +22,16 @@ import NxtWatchContext from './context/NxtWatchContext'
 
 import './App.css'
 
+const localStoredSavedVideosList = JSON.parse(
+  localStorage.getItem('savedVideosList'),
+)
+
 class App extends Component {
   state = {
     activeTab: 'Home',
     darkMode: false,
-    savedVideos: [],
+    savedVideos:
+      localStoredSavedVideosList === null ? [] : localStoredSavedVideosList,
   }
 
   changeActiveTab = tab => {
@@ -62,6 +67,8 @@ class App extends Component {
 
   render() {
     const {activeTab, darkMode, savedVideos} = this.state
+
+    localStorage.setItem('savedVideosList', JSON.stringify(savedVideos))
 
     return (
       <NxtWatchContext.Provider
